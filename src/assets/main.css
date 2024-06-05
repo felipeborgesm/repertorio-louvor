@@ -1,0 +1,14 @@
+body {
+  background-color:  #b6d496 !important; /* Cor de fundo para todo o site */
+  font-family: Roboto, sans-serif;
+}
+
+.v-main, .v-app-bar {
+  background-color:  #b6d496 !important; /* Cor de fundo para os componentes Vuetify */
+  color: var(#b6d496) !important;
+}
+
+/* .v-card, .v-data-table, .v-data-table-virtual  {
+  background-color:  #b6d496 !important;
+  color: var(#b6d496) !important;
+} */

@@ -33,7 +33,7 @@ const items = ref([
 
       <v-navigation-drawer
         v-model="drawer"
-        :location="$vuetify.display.mobile ? 'left' : undefined"
+        location="left"
         temporary
       >
         <v-list v-for="(item, index) in items" :key="index">

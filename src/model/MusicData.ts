@@ -4,4 +4,5 @@ export default interface MusicData {
     description: string
     tom: string
     webViewLink: string
+    youtube_link: string
 }

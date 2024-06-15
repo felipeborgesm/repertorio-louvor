@@ -69,12 +69,12 @@ function isDisabled(music: MusicData) {
   return !isSelected(music) && selectedMusics.value.length >= 6
 }
 
-function load({ done }) {
+function load({ done }: { done: (arg: string) => void }) {
   setTimeout(() => {
     done('empty')
   }, 1000)
 }
-function load2({ done }) {
+function load2({ done }: { done: (arg: string) => void }) {
   setTimeout(() => {
     done('empty')
   }, 1000)

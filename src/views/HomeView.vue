@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
+import type LoadParams from '@/model/LoadParamsForInfiteScrollComponent'
 import { getMusicData } from '@/services/firestoreService'
 import type MusicData from '@/model/MusicData'
 import { authGoogle } from '@/services/googleAuthService'
@@ -69,12 +70,12 @@ function isDisabled(music: MusicData) {
   return !isSelected(music) && selectedMusics.value.length >= 6
 }
 
-function load({ done }: { done: (arg: string) => void }) {
+function load({ done }: LoadParams) {
   setTimeout(() => {
     done('empty')
   }, 1000)
 }
-function load2({ done }: { done: (arg: string) => void }) {
+function load2({ done }: LoadParams) {
   setTimeout(() => {
     done('empty')
   }, 1000)

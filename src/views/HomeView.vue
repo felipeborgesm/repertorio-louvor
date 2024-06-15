@@ -16,7 +16,7 @@ onMounted(async () => {
   }
 })
 
-const search = ref<string>()
+const search = ref<string>('')
 
 const filteredMusicList = computed(() => {
   if (!search.value) {
